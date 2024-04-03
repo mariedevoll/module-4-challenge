@@ -21,7 +21,7 @@ const handleFormSubmit = function(event) {
     const content = document.querySelector('#content').value.trim();
 
     if (!username || !title || !content) {
-        const errorElement = focument.querySelector('#error');
+        const errorElement = document.querySelector('#error');
         errorElement.textContent = 'please fill in all fields';
 
         setTimeout(() => {
